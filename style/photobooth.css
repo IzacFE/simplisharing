@@ -1,0 +1,124 @@
+.photobooth {
+  font-family: "Roboto", sans-serif;
+  background-color: #272626;
+}
+
+.photobooth .logo-container {
+  position: relative;
+}
+
+.photobooth .logo {
+  display: block;
+  position: absolute;
+  left: -3rem;
+  top: -0.5rem;
+  transform: rotate(-25deg);
+  z-index: 100;
+  background-color: #eb3b5a;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.photobooth .content {
+  display: block;
+  width: fit-content;
+  height: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.photobooth .holder {
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+  border: 10px dotted #eb3b5a;
+  padding: 10px;
+}
+
+.photobooth #video {
+  float: left;
+}
+
+.photobooth #canvas {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.photobooth #video,
+.photobooth #canvas {
+  border-radius: 20px;
+}
+
+.photobooth .descript {
+  position: relative;
+}
+
+.photobooth h1 {
+  font-size: 2rem;
+  height: 3rem;
+  color: #ffffff;
+  width: 100%;
+  position: absolute;
+
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
+  background-color: #eb3b5a;
+  bottom: -2rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.photobooth .buttons {
+  margin-top: 20px;
+}
+
+.photobooth button {
+  font-family: "Roboto", sans-serif;
+  width: 140px;
+  height: 45px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  background-color: #eb3b5a;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: #ffffff;
+}
+
+.photobooth button:hover {
+  opacity: 0.8;
+}
+
+.photobooth button:disabled {
+  color: #999;
+}
+
+.photobooth #savedImages {
+  display: inline-block;
+  margin-top: 30px;
+  text-align: left;
+  max-width: 1020px;
+  background-color: #edf9ff;
+  border-radius: 5px;
+}
+
+.photobooth #savedImages h1,
+.photobooth #savedImages h2,
+.photobooth #savedImages h3 {
+  color: red;
+  padding: 0 20px;
+}
+
+.photobooth #savedImages img {
+  margin: 5px;
+}
+
+.photobooth .paypal {
+  margin-top: 10px;
+  line-height: 30px;
+}

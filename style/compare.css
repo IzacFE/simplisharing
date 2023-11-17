@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+.compare {
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-item: center;
+  gap: 50px;
+}
+
+.compare .container {
+  width: 250px;
+}
+
+.compare .css {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+
+.compare .css-title {
+  font-size: 1.5rem;
+}
+
+.compare .css-descript {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px dashed grey;
+  border-radius: 8px;
+  background-color: rgb(210, 241, 241);
+}
+
+.compare .css-descript:hover {
+  opacity: 0.5;
+}
+
+.compare .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.compare .active,
+.compare .collapsible:hover {
+  background-color: #555;
+}
+
+.compare .content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+@media (max-width:800px) {
+  .compare{
+    display: none;
+  }
+}

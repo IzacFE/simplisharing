@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to HTML in Website</title>
+    <meta name="description" content="Lets Learn HTML !!" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  </head>
+  <body>
+    <section class="compare">
+      <link rel="stylesheet" href="./style/compare.css" />
+      <div class="html container">
+        <h1>This is HTML only</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          placeat repudiandae nostrum quas laudantium incidunt sed labore
+          laborum quo aliquid, voluptatum consequuntur reprehenderit ad, saepe
+          laboriosam quia. Repellendus, quasi temporibus.
+        </p>
+      </div>
+      <div class="css container">
+        <h1 class="css-title">This is HTML + CSS</h1>
+        <p class="css-descript">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          placeat repudiandae nostrum quas laudantium incidunt sed labore
+          laborum quo aliquid, voluptatum consequuntur reprehenderit ad, saepe
+          laboriosam quia. Repellendus, quasi temporibus.
+        </p>
+      </div>
+      <div class="css script container">
+        <h1 class="css-title">HTML + CSS + Javascript</h1>
+        <button type="button" class="collapsible">Open Collapsible</button>
+        <div class="content">
+          <p class="css-descript" onclick="showAlert()">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            placeat repudiandae nostrum quas laudantium incidunt sed labore
+            laborum quo aliquid, voluptatum consequuntur reprehenderit ad, saepe
+            laboriosam quia. Repellendus, quasi temporibus.
+          </p>
+        </div>
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+
+          function showAlert() {
+            window.alert("effect of javascript");
+          }
+        </script>
+      </div>
+    </section>
+    <section
+      class="tags"
+      style="
+        width: fit-content;
+        margin: auto;
+        margin-top: 10rem;
+        border: 1px solid black;
+        padding: 2rem;
+        padding-left: 3rem;
+      "
+    >
+      <h1>This is heading 1 &lt;h1&gt;</h1>
+      <br />
+      <p>This is paragraph tag <b>&lt;p&gt;</b></p>
+      <br />
+      <p>This is image tag <b>&lt;img&gt;</b></p>
+      <img
+        src="https://www.simplidots.com/wp-content/uploads/Simplidots_Merchant-logo-1611808981.jpg"
+        alt="Simplidots"
+        width="200px"
+        height="auto"
+      />
+      <br />
+      <p>This is unordered list tag <b>&lt;ul&gt;</b></p>
+      <ul>
+        <li>unordered list</li>
+        <li>unordered list</li>
+        <li>unordered list</li>
+      </ul>
+      <br />
+      <p>This is ordered list tag <b>&lt;ol&gt;</b></p>
+      <ol>
+        <li>unordered list</li>
+        <li>unordered list</li>
+        <li>unordered list</li>
+      </ol>
+    </section>
+    <section class="photobooth">
+      <link
+        href="https://fonts.googleapis.com/css?family=Roboto"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./style/photobooth.css" />
+      <div class="content">
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="./img/white_logo.png"
+            alt="Simplidots"
+            width="150px"
+          />
+        </div>
+        <div class="holder">
+          <video autoplay id="video"></video>
+          <div id="fallback" style="display: none">
+            <div id="alternativeContent">
+              You need Flash Player to use this feature
+              <p>
+                <a href="https://www.adobe.com/go/getflashplayer"
+                  ><img
+                    src="https://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
+                    alt="Get Adobe Flash player"
+                /></a>
+              </p>
+            </div>
+          </div>
+          <canvas id="canvas"></canvas>
+        </div>
+        <div class="descript">
+          <h1>Learning HTML</h1>
+        </div>
+        <div class="buttons">
+          <button id="buttonCapture" disabled>Capture</button>
+        </div>
+      </div>
+      <script src="./config/photobooth.js"></script>
+    </section>
+  </body>
+</html>
